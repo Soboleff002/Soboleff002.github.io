@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - Ремонт техники</title>
+    <style>
+        /* Общие стили для всех страниц */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        /* Стили для головы */
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        /* Стили для футера */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Ремонт</span> техники</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li class="current"><a href="about.html">Отзывы</a></li>
+                    <li><a href="contact.html">Оставить заявку</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+      <section id="reviews">
+            <div class="container">
+                <h1>Отзывы о нашей работе</h1>
+                <div class="review">
+                    <h3>Иван Иванов</h3>
+                    <p class="rating">★★★★★</p>
+                    <p>Отличный сервис! Мастер профессиональный и приветливый. Быстро и качественно починили мой ноутбук.</p>
+                </div>
+                <div class="review">
+                    <h3>Петр Петров</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p>Хороший сервис, но мастер не очень доброжелателен. Ноутбук починили быстро, но вот сдача вышла немного дороже, чем обещали.</p>
+                </div>
+                <!-- Добавьте здесь больше отзывов -->
+<div class="review-form">
+                    <h2>Оставить отзыв</h2>
+                    <form action="submit_review.php" method="post">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="rating">Оценка:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Выберите оценку</option>
+                            <option value="1">1 звезда</option>
+                            <option value="2">2 звезды</option>
+                            <option value="3">3 звезды</option>
+                            <option value="4">4 звезды</option>
+                            <option value="5">5 звезд</option>
+                        </select>
+
+                        <label for="review">Отзыв:</label>
+                        <textarea id="review" name="review" required="" style="height: 163px; width: 1119px;"></textarea>
+                        <input type="submit" value="Отправить отзыв">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ремонт техники, Copyright &copy; 2022</p>
+    </footer>
+
+    <!-- Добавьте здесь ваши скрипты JavaScript -->
+</body>
+</html>

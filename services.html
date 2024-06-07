@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт техники</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+ nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        main {
+            margin-top: 70px; /* Высота зафиксированного хедера */
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+.box-image {
+    width: 300px; /* Задайте желаемую фиксированную ширину */
+    height: 300px; /* Задайте желаемую фиксированную высоту */
+    object-fit: cover; /* Обеспечивает сохранение пропорций и обрезает лишнее */
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box-text {
+    margin-left: 20px;
+}
+.price-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .price-table th,
+        .price-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .price-table th {
+            background-color: #50b3a2;
+            color: white;
+        }
+        .price-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .subservice {
+            margin-left: 20px;
+        }
+        /* Дополнительные стили для страницы */
+        /* ... */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Ремонт техники <span class="highlight">DROID</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="current"><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contact.html">Оставить заявку</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <section id="services">
+        <div class="container">
+            <h1>Наши услуги</h1>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Описание</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ремонт компьютеров</td>
+                        <td>
+                            <ul>
+                                <li>Диагностика: 100 руб.</li>
+                                <li>Очистка от пыли: 500 руб.</li>
+                                <!-- Добавьте другие подуслуги для ремонта компьютеров -->
+                            </ul>
+                        </td>
+                        <td>от 1000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Ремонт ноутбуков</td>
+                        <td>
+                            <ul>
+                                <li>Диагностика: 150 руб.</li>
+                                <li>Замена дисплея: 2000 руб.</li>
+                                <!-- Добавьте другие подуслуги для ремонта ноутбуков -->
+                            </ul>
+                        </td>
+                        <td>от 800 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Ремонт мобильных телефонов</td>
+                        <td>
+                            <ul>
+                                <li>Диагностика: 80 руб.</li>
+                                <li>Замена экрана: 1500 руб.</li>
+                                <!-- Добавьте другие подуслуги для ремонта мобильных телефонов -->
+                            </ul>
+                        </td>
+                        <td>от 500 руб.</td>
+                    </tr>
+                    <!-- Добавьте другие услуги здесь -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>Ремонт техники, Copyright &copy; 2022</p>
+    </footer>
+
+    <script>
+        // Дополнительный JavaScript для интерактивности страницы
+        // ...
+    </script>
+</body>
+</html>
